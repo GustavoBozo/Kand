@@ -2,6 +2,7 @@ import cv2
 from cvzone.HandTrackingModule import HandDetector
 import os
 import numpy as np
+from AppOpener import open
 
 width, height = 1280, 720
 folderPath = 'slides'
@@ -63,7 +64,7 @@ while active:
             active = False
         
         if fingers == [0,1,1,0,0]:
-            cv2.circle(currentImage, indexFinger, 12, (255,0,255), cv2.FILLED)
+            open("chrome")
         
 
     if buttonPressed:
